@@ -1,0 +1,20 @@
+﻿<Window x:Class="Lopushock.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lopushock"
+        mc:Ignorable="d"
+        Title="Главная страница" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <ScrollViewer x:Name="paper_scroll" HorizontalAlignment="Left" Height="334" Margin="10,62,0,0" VerticalAlignment="Top" Width="772" VerticalScrollBarVisibility="Hidden">
+            <WrapPanel x:Name="paper_list"/>
+        </ScrollViewer>
+        <TextBox x:Name="Search" HorizontalAlignment="Left" Height="23" Margin="33,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237" TextChanged="Search_TextChanged"/>
+        <ComboBox x:Name="Filtr" SelectedIndex="0" HorizontalAlignment="Left" Margin="374,35,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="Filtr_SelectionChanged"/>
+        <ComboBox x:Name="Sort" HorizontalAlignment="Left" Margin="622,34,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="Sort_SelectionChanged"/>
+        <Button x:Name="pageupbutton" Content="Вперед" HorizontalAlignment="Left" Margin="622,389,0,0" VerticalAlignment="Top" Width="75" Click="pageupbutton_Click"/>
+        <Button x:Name="pagedonwbutton" Content="Назад" HorizontalAlignment="Left" Margin="707,389,0,0" VerticalAlignment="Top" Width="75" Click="pagedonwbutton_Click"/>
+
+    </Grid>
+</Window>
